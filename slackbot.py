@@ -28,7 +28,7 @@ def handle_command(command, channel):
         response = "Do it yourself ..."
     if command.startswith(MAKE):
         response = "Make it yourself ..."
-    if command.startwith(COFFEE):
+    if command.startswith(COFFEE):
         response = "Here you go :coffee:"
     slack_client.api_call("chat.postMessage", channel=channel,
                           text=response, as_user=True)
