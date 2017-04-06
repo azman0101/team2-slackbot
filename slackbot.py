@@ -5,7 +5,7 @@ from slackclient import SlackClient
 from chatterbot import ChatBot
 
 chatbot = ChatBot(
-    'skynet2',
+    'marvin',
     trainer='chatterbot.trainers.ChatterBotCorpusTrainer'
 )
 
@@ -17,7 +17,7 @@ chatbot.train('chatterbot.corpus.french.trivia')
 # starterbot's ID as an environment variable
 #BOT_ID = os.environ.get("BOT_ID")
 
-BOT_NAME = 'skynet2'
+BOT_NAME = 'marvin'
 
 # constants
 AT_BOT = None
